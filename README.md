@@ -57,6 +57,14 @@ These items are stored within this repository, you will have to download it to y
 
 4. Lambda trust policy (trust-policy.json)
 
+5. index.html
+
+6. style.css
+
+7. main.js - this is where the logic is contained which interacts with the Lambda Function 
+
+## Creation Steps of the Lambda Function (clone this repo to your local workspace)
+
 #### 1 Set our chosen bucket name to a variable called `$BUCKET_NAME`
 
   ```bash
