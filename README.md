@@ -168,22 +168,6 @@ These items are stored within this repository, you will have to download it to y
   cat blog.txt
   ```
 
-#### 18. Create our Amazon EventBridge Rule to allow us to run this Lambda on a Schedule (8am everday of the year) (Optional)
+#### 17. Create our Web Application
 
-  ```bash
-  RULE_ARN=$(aws events put-rule --name daily-9am --schedule-expression "cron(0 8 * * ? *)" --query 'RuleArn' --output text)
-  ```
-
-#### 19. Update our Lambda permissions to allow it to be invoked by Amazon EventBridge
-
-  ```bash
-  aws lambda add-permission --function-name BlogFunction --statement-id "EventbridgeInvokeRule" --action 'lambda:InvokeFunction' --principal events.amazonaws.com --source-arn $RULE_ARN
-  ```
-
-#### 20. Attach our rule as a trigger to our Lambda Function
-
-  ```bash
-  aws events put-targets --rule daily-9am --targets Id=1,Arn=$LAMBDA_ARN
-  ```
-
-#### Feel free to reach out at lavellej286@gmail.com if you have any questions, and feel free to submit pull requests. 
+Simply now deploy the application as a web application - see my example webapp.yaml file for reference. 
