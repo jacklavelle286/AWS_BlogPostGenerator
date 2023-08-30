@@ -62,3 +62,7 @@ These items are stored within this repository, you will have to download it to y
 6. style.css
 
 7. main.js - this is where the logic is contained which interacts with the Lambda Function 
+
+The following architectural diagram shows how the rest of the application is constructed on AWS:
+
+
