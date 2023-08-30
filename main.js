@@ -76,4 +76,14 @@ function updateProgressBar(progress) {
         hideProgressBar();
       });
   });
+
+// Function to copy text from textarea to clipboard
+function copyToClipboard() {
+    const textarea = document.getElementById("blogContent");
+    textarea.select();
+    document.execCommand("copy");
+  }
+  
+  // Attach the function to the copy button click event
+  document.getElementById("copyBtn").addEventListener("click", copyToClipboard);
   
