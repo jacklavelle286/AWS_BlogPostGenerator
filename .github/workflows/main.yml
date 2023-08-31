@@ -22,4 +22,4 @@ jobs:
 
     - name: Trigger EC2 Image Builder Pipeline
       run: |
-        aws imagebuilder start-image-pipeline-execution --image-pipeline-arn "arn:aws:imagebuilder:us-east-1:500424735506:image-pipeline/blog-post-image-pipeline"
+        aws imagebuilder start-image-pipeline-execution --image-pipeline-arn "arn:aws:imagebuilder:us-east-1:500424735506:image-pipeline/pipeline-blog-prod"
