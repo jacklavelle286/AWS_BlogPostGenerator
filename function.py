@@ -2,6 +2,7 @@ import openai
 import boto3
 import os
 import uuid
+import random
 from botocore.exceptions import NoCredentialsError
 
 # Initialize OpenAI and S3 clients
